@@ -23,7 +23,7 @@ export const StartOverlay = ({ onStart }: Props) => {
           Karaoke Experience
         </div>
         <h1 className="font-display font-black text-5xl md:text-7xl lg:text-8xl text-foreground tracking-tighter">
-          SAYAW <span className="text-accent-orange karaoke-glow">IT</span>
+          LIBOT
         </h1>
         <p className="text-muted-foreground mt-4 text-sm md:text-base tracking-wide">
           Press start to begin · 115 BPM

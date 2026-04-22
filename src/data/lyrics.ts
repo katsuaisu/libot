@@ -36,5 +36,4 @@ export const LYRICS: LyricLine[] = [
 
   { text: "Ipalibot-libot, oh, paikot-ikot", start: 232, end: 240, section: "REFRAIN" },
   { text: "Oh, palibot-libot,", start: 240, end: 245 },
-  { text: "Ipaikot-ikot", start: 250, end: 252 },
 ];

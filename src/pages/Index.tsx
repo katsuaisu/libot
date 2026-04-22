@@ -75,7 +75,7 @@ const Index = () => {
             Now Playing
           </div>
           <div className="font-display text-xl md:text-2xl text-foreground tracking-wider">
-            SAYAW <span className="text-accent-orange">IT</span>
+            LIBOT
           </div>
         </motion.div>
       )}
