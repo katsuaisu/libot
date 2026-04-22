@@ -20,13 +20,13 @@ export const StartOverlay = ({ onStart }: Props) => {
         className="text-center mb-12 px-6"
       >
         <div className="text-accent-orange text-xs md:text-sm font-mono tracking-[0.5em] uppercase mb-4">
-          Karaoke Experience
+          Karaoke
         </div>
         <h1 className="font-display font-black text-5xl md:text-7xl lg:text-8xl text-foreground tracking-tighter">
           LIBOT
         </h1>
         <p className="text-muted-foreground mt-4 text-sm md:text-base tracking-wide">
-          Press start to begin · 115 BPM
+          Press start to begin
         </p>
       </motion.div>
 
@@ -43,14 +43,6 @@ export const StartOverlay = ({ onStart }: Props) => {
         <Play className="h-12 w-12 md:h-16 md:w-16 ml-2" fill="currentColor" strokeWidth={0} />
       </motion.button>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.8 }}
-        className="mt-12 text-muted-foreground/60 text-xs tracking-widest uppercase"
-      >
-        Headphones recommended
-      </motion.div>
     </motion.div>
   );
 };
