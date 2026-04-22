@@ -9,13 +9,6 @@ interface Props {
 }
 
 export const LyricLine = ({ line, currentTime, isActive, isPast }: Props) => {
-  let progress = 0;
-  if (isPast) progress = 100;
-  else if (isActive) {
-    const duration = line.end - line.start;
-    progress = Math.min(100, Math.max(0, ((currentTime - line.start) / duration) * 100));
-  }
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -32,20 +25,8 @@ export const LyricLine = ({ line, currentTime, isActive, isPast }: Props) => {
           {line.section}
         </div>
       )}
-      <div className="relative inline-block font-display font-black text-3xl md:text-5xl lg:text-6xl leading-tight tracking-tight">
-        {/* Base white text */}
-        <span className="relative text-foreground/90">{line.text}</span>
-        {/* Orange progressive fill overlay */}
-        <span
-          aria-hidden
-          className="absolute inset-0 overflow-hidden text-accent-orange karaoke-glow whitespace-nowrap"
-          style={{
-            width: `${progress}%`,
-            transition: isActive ? "width 80ms linear" : "width 300ms ease-out",
-          }}
-        >
-          {line.text}
-        </span>
+      <div className="font-display font-black text-3xl md:text-5xl lg:text-6xl leading-tight tracking-tight text-foreground/90">
+        {line.text}
       </div>
     </motion.div>
   );
