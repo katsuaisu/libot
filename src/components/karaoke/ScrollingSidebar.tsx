@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import sr1 from "@/assets/sr1.jpg";
+import sr1 from "@/assets/sr1.png";
 import sr2 from "@/assets/sr2.jpg";
 import sr3 from "@/assets/sr3.jpg";
 import sr4 from "@/assets/sr4.jpg";
